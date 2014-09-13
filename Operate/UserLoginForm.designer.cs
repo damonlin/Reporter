@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserLoginForm));            
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserLoginForm));
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.loginIDTextBox = new System.Windows.Forms.TextBox();
@@ -42,7 +41,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.FastLoginButton = new System.Windows.Forms.Button();           
+            this.FastLoginButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // passwordTextBox
@@ -126,17 +125,6 @@
             this.FastLoginButton.Name = "FastLoginButton";
             this.FastLoginButton.UseVisualStyleBackColor = false;
             this.FastLoginButton.Click += new System.EventHandler(this.FastLoginButton_Click);
-            // 
-            // cardReader1
-            // 
-            //transmissionRate1.Boudrate = 9600;
-            //transmissionRate1.DataBits = 8;
-            //transmissionRate1.PortNumber = 1;
-            //transmissionRate1.PortParity = System.IO.Ports.Parity.None;
-            //transmissionRate1.StopBits = System.IO.Ports.StopBits.One;
-            //this.cardReader1.CardReaderTransmissionRate = transmissionRate1;
-            //this.cardReader1.CardType = MainPage.CardReaderType.HID;
-            //this.cardReader1.TextBoxForSetCardID = this.CardIDTextBox;
             // 
             // UserLoginForm
             // 

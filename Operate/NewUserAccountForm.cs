@@ -74,30 +74,30 @@ namespace MainPage
             return false;
          }
 
-         if (accountTypeComboBox.SelectedIndex==-1 || ((string)(accountTypeComboBox.SelectedItem)).Length == 0)
-         {
-            MessageBox.Show("Account type must be selected.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            return false;
-         }
+         //if (accountTypeComboBox.SelectedIndex==-1 || ((string)(accountTypeComboBox.SelectedItem)).Length == 0)
+         //{
+         //   MessageBox.Show("Account type must be selected.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+         //   return false;
+         //}
 
          userAccount.LoginID = loginIDTextBox.Text;
          userAccount.Password = passwordTextBox.Text;
          userAccount.Department = (string)departmentComboBox.SelectedItem;
          userAccount.UserName = userNameTextBox.Text;
          userAccount.Description = descriptionTextBox.Text;
-         userAccount.CardID = CardIDTextBox.Text;
+         //userAccount.CardID = CardIDTextBox.Text;
 
-         this.userAccount.AccountType.Clear();
-         this.userAccount.AccountType.AddType((string)(accountTypeComboBox.SelectedItem), (int)(userAccountPanelControl.accountTypeTable[accountTypeComboBox.SelectedItem]));
+         //this.userAccount.AccountType.Clear();
+         //this.userAccount.AccountType.AddType((string)(accountTypeComboBox.SelectedItem), (int)(userAccountPanelControl.accountTypeTable[accountTypeComboBox.SelectedItem]));
 
-         userAccount.EnableAdvancedAccess = advancedFunctionAccessCheckBox.Checked;
+         //userAccount.EnableAdvancedAccess = advancedFunctionAccessCheckBox.Checked;
 
-         for (int i = 0; i < userAccountPanelControl.accessFunctionTable.Count; i++ )
-         {
-            if (advancedAccessCheckedListBox.GetItemChecked(i)==true)
-               //userAccount.AccessFunction.Add(userAccountPanelControl.accessFunctionTable[i]);
-               userAccount.AccessFunction.AddFunction((AccessFunction)userAccountPanelControl.accessFunctionTable[i]);
-         }         
+         //for (int i = 0; i < userAccountPanelControl.accessFunctionTable.Count; i++ )
+         //{
+         //   if (advancedAccessCheckedListBox.GetItemChecked(i)==true)
+         //      //userAccount.AccessFunction.Add(userAccountPanelControl.accessFunctionTable[i]);
+         //      userAccount.AccessFunction.AddFunction((AccessFunction)userAccountPanelControl.accessFunctionTable[i]);
+         //}         
 
          return true;
       }
