@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8C964985-018D-442B-B6CB-9A7E2BFDBD81}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ContrelModule</RootNamespace>
+    <AssemblyName>ContrelModule</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IniTool">
+      <HintPath>..\CTAP\bin\Debug\Library\IniTool.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuxiliaryFunction\Lens.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AuxiliaryFunction\Lens.Designer.cs">
+      <DependentUpon>Lens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuxiliaryFunction\LightControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AuxiliaryFunction\LightControl.Designer.cs">
+      <DependentUpon>LightControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuxiliaryFunction\SubPixelControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AuxiliaryFunction\SubPixelControl.Designer.cs">
+      <DependentUpon>SubPixelControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuxiliaryFunction\ZMotionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AuxiliaryFunction\ZMotionControl.Designer.cs">
+      <DependentUpon>ZMotionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuxiliaryFunction\ZMotionSetup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AuxiliaryFunction\ZMotionSetup.Designer.cs">
+      <DependentUpon>ZMotionSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CPLCInterface.cs" />
+    <Compile Include="PG\Chroma.cs" />
+    <Compile Include="PG\PatternGenerator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PG\PatternGenerator.Designer.cs">
+      <DependentUpon>PatternGenerator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="AuxiliaryFunction\ZMotionLib.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AuxiliaryFunction\Lens.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Lens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuxiliaryFunction\LightControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LightControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuxiliaryFunction\SubPixelControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SubPixelControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuxiliaryFunction\ZMotionControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ZMotionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PG\PatternGenerator.resx">
+      <DependentUpon>PatternGenerator.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{16C8E8F6-E87C-41A9-AFA0-2D155569212E}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommunicationInterface\CommunicationInterface.csproj">
+      <Project>{D93B27FA-8BD4-4742-B482-5FBA325F3F3C}</Project>
+      <Name>CommunicationInterface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\Button-Blank-Blue-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Blank-Gray-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Blank-Green-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Blank-Red-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Delete-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Download-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Forward-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Next-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Previous-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Upload-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

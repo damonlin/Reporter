@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{16C8E8F6-E87C-41A9-AFA0-2D155569212E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Common</RootNamespace>
+    <AssemblyName>Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LogFile, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\C# Tool\LogFile\LogFile\bin\Debug\LogFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TabControlEX, Version=0.0.3271.41578, Culture=neutral, PublicKeyToken=1db242dc828e4b4e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\C# Tool\TabControlEX.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CTAPSetup.cs" />
+    <Compile Include="Debug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Debug.designer.cs">
+      <DependentUpon>Debug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalValue.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RS232.cs" />
+    <Compile Include="ShareMemory.cs" />
+    <Compile Include="TCPIP2.cs" />
+    <Compile Include="Template\InfoPanelTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Template\InfoPanelTemplate.designer.cs">
+      <DependentUpon>InfoPanelTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Template\NavigationPanelTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Template\NavigationPanelTemplate.designer.cs">
+      <DependentUpon>NavigationPanelTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Template\QuarterPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Template\QuarterPanel.designer.cs">
+      <DependentUpon>QuarterPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Template\SubInfoPanelTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Template\SubInfoPanelTemplate.designer.cs">
+      <DependentUpon>SubInfoPanelTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win32API.cs" />
+    <Compile Include="Wizard\CCExteriorWizardPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\CCExteriorWizardPage.designer.cs">
+      <DependentUpon>CCExteriorWizardPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\CCInteriorWizardPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\CCInteriorWizardPage.designer.cs">
+      <DependentUpon>CCInteriorWizardPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\CCWizardForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\CCWizardForm.designer.cs">
+      <DependentUpon>CCWizardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizard\CCWizardPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\CCWizardPage.designer.cs">
+      <DependentUpon>CCWizardPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZSModule.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Debug.resx">
+      <DependentUpon>Debug.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template\InfoPanelTemplate.resx">
+      <DependentUpon>InfoPanelTemplate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template\NavigationPanelTemplate.resx">
+      <DependentUpon>NavigationPanelTemplate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template\QuarterPanel.resx">
+      <DependentUpon>QuarterPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template\SubInfoPanelTemplate.resx">
+      <DependentUpon>SubInfoPanelTemplate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\CCExteriorWizardPage.resx">
+      <DependentUpon>CCExteriorWizardPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\CCExteriorWizardPage.zh-TW.resx">
+      <DependentUpon>CCExteriorWizardPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\CCInteriorWizardPage.resx">
+      <DependentUpon>CCInteriorWizardPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\CCInteriorWizardPage.zh-TW.resx">
+      <DependentUpon>CCInteriorWizardPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\CCWizardForm.en.resx">
+      <DependentUpon>CCWizardForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\CCWizardForm.resx">
+      <DependentUpon>CCWizardForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\CCWizardForm.zh-TW.resx">
+      <DependentUpon>CCWizardForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\CCWizardPage.resx">
+      <DependentUpon>CCWizardPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contrel Logo2.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AF7876BD-588D-43D6-9FFC-4999E4C88CB4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CIM</RootNamespace>
+    <AssemblyName>CIM</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IniTool, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CTAP\bin\Debug\Library\IniTool.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ACTBOARDLib, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CTAP\bin\Debug\Library\Interop.ACTBOARDLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ACTETHERLib, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CTAP\bin\Debug\Library\Interop.ACTETHERLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ACTLLTLib, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CTAP\bin\Debug\Library\Interop.ACTLLTLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ACTPCUSBLib, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CTAP\bin\Debug\Library\Interop.ACTPCUSBLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.MSCommLib, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CTAP\bin\Debug\Library\Interop.MSCommLib.dll</HintPath>
+    </Reference>
+    <Reference Include="LogFile, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CTAP\bin\Debug\Library\LogFile.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="nspring, Version=1.1.1389.36054, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CTAP\bin\Debug\Library\nspring.dll</HintPath>
+    </Reference>
+    <Reference Include="PLC_Interface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CTAP\bin\Debug\Library\PLC_Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TabControlEX, Version=0.0.3271.41578, Culture=neutral, PublicKeyToken=1db242dc828e4b4e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CTAP\bin\Debug\Library\TabControlEX.dll</HintPath>
+    </Reference>
+    <Reference Include="Vision, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CTAP\bin\Debug\Library\Vision.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="InstantChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InstantChart.Designer.cs">
+      <DependentUpon>InstantChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{16C8E8F6-E87C-41A9-AFA0-2D155569212E}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Datalog\HistoryChart.csproj">
+      <Project>{9BF7F3DC-0CE5-4758-9071-39746EECA29E}</Project>
+      <Name>HistoryChart</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspect\Inspect.csproj">
+      <Project>{4EF9DE44-9367-4F5C-8362-DA4D682D1A62}</Project>
+      <Name>Inspect</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Maintain\Alarm.csproj">
+      <Project>{A9DDCCF9-34C8-419A-8D54-6CD7E70557E7}</Project>
+      <Name>Alarm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Module\ContrelModule.csproj">
+      <Project>{8C964985-018D-442B-B6CB-9A7E2BFDBD81}</Project>
+      <Name>ContrelModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Recipe\Parameter.csproj">
+      <Project>{C91DFB82-1A09-49CE-87A7-DD93DE58CE00}</Project>
+      <Name>Parameter</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="InstantChart.resx">
+      <DependentUpon>InstantChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
