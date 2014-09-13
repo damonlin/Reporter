@@ -39,7 +39,8 @@ namespace Monitor
         {
             if (singleton == null)
             {
-                singleton = new CTAP();
+                if (MainPage.UserLoginForm.getSingleton().ShowDialog() != DialogResult.Abort)
+                    singleton = new CTAP();
             }
             return singleton;
         }
@@ -51,8 +52,8 @@ namespace Monitor
         }
 
         private void InitControl()
-        {
-            //Common.Template.InfoPanelTemplate automodePanel = new AutoMode.AutoModePanel();
+        {            
+            //Common.Template.InfoPanelTemplate automodePanel = AutoMode.AutoModePanel.getSingleton();
             Common.Template.InfoPanelTemplate automodePanel = AutoMode.AutoModePanel.getSingleton();
             Common.Template.InfoPanelTemplate ParaPanel = new Parameter.ParameterPanel();
             Common.Template.InfoPanelTemplate instantchartPanel = new InstantChart.InstantChartPanel();

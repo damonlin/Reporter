@@ -41,6 +41,9 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml" />
+    <Reference Include="TabControlEX">
+      <HintPath>..\..\Monitor\CTAP\bin\Debug\Library\TabControlEX.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutoModePanel.cs">
@@ -53,11 +56,29 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Confirm.Designer.cs" />
+    <Compile Include="NewUserAccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewUserAccountForm.designer.cs">
+      <DependentUpon>NewUserAccountForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserAccountPanelControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserAccountPanelControl.designer.cs">
+      <DependentUpon>UserAccountPanelControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserLoginForm.designer.cs">
+      <DependentUpon>UserLoginForm.cs</DependentUpon>
     </Compile>
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
@@ -67,9 +88,21 @@
       <DependentUpon>AutoModePanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Confirm.resx" />
+    <EmbeddedResource Include="NewUserAccountForm.resx">
+      <DependentUpon>NewUserAccountForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAccountPanelControl.resx">
+      <DependentUpon>UserAccountPanelControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserLoginForm.resx">
+      <DependentUpon>UserLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserLoginForm.zh-TW.resx">
+      <DependentUpon>UserLoginForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -93,6 +126,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\圖控頁面1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Arrow Down.png" />
+    <Content Include="Resources\Arrow Up.png" />
+    <Content Include="Resources\Button-Delete-icon.png" />
+    <Content Include="Resources\Button-Download-icon.png" />
+    <Content Include="Resources\Button-Forward-icon.png" />
+    <Content Include="Resources\Button-Next-icon.png" />
+    <Content Include="Resources\Button-Previous-icon.png" />
+    <Content Include="Resources\Button-Rewind-icon.png" />
+    <Content Include="Resources\Button-Upload-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
