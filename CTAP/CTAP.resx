@@ -451,7 +451,7 @@
     <value>NoControl</value>
   </data>
   <data name="ShutdownRadioButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>845, 5</value>
+    <value>701, 5</value>
   </data>
   <data name="ShutdownRadioButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>130, 40</value>
@@ -547,7 +547,7 @@
     <value>1</value>
   </data>
   <data name="ParameterRadioButton.Text" xml:space="preserve">
-    <value> Parameter</value>
+    <value>檢測紀錄表</value>
   </data>
   <data name="ParameterRadioButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -589,7 +589,7 @@
     <value>0</value>
   </data>
   <data name="AutoModeRadioButton.Text" xml:space="preserve">
-    <value>Auto Mode</value>
+    <value>入廠檢測書</value>
   </data>
   <data name="AutoModeRadioButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -622,7 +622,7 @@
     <value>NoControl</value>
   </data>
   <data name="PrintScreenRadioButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>705, 5</value>
+    <value>981, 5</value>
   </data>
   <data name="PrintScreenRadioButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>130, 40</value>
@@ -635,6 +635,9 @@
   </data>
   <data name="PrintScreenRadioButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
+  </data>
+  <data name="PrintScreenRadioButton.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;PrintScreenRadioButton.Name" xml:space="preserve">
     <value>PrintScreenRadioButton</value>
@@ -673,7 +676,7 @@
     <value>2</value>
   </data>
   <data name="InstantChartRadioButton.Text" xml:space="preserve">
-    <value>Instant Chart</value>
+    <value>測試報告書</value>
   </data>
   <data name="InstantChartRadioButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -715,7 +718,7 @@
     <value>5</value>
   </data>
   <data name="AlarmRadioButton.Text" xml:space="preserve">
-    <value>Alarm</value>
+    <value>帳號管理</value>
   </data>
   <data name="AlarmRadioButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -757,7 +760,7 @@
     <value>4</value>
   </data>
   <data name="HistoryChartRadioButton.Text" xml:space="preserve">
-    <value>History Chart</value>
+    <value>歷史資料查詢</value>
   </data>
   <data name="HistoryChartRadioButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>

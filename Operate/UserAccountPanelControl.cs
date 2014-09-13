@@ -10,10 +10,11 @@ using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using System.Threading;
+using Common.Template;
 
 namespace MainPage
 {
-    public partial class UserAccountPanelControl : UserControl
+    public partial class UserAccountPanelControl : InfoPanelTemplate
     {
         private const string strINIPath = "INI\\UserAccount.INI";
         private static UserAccountPanelControl singleton;

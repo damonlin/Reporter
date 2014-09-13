@@ -54,20 +54,20 @@ namespace Monitor
         private void InitControl()
         {            
             //Common.Template.InfoPanelTemplate automodePanel = AutoMode.AutoModePanel.getSingleton();
-            Common.Template.InfoPanelTemplate automodePanel = AutoMode.AutoModePanel.getSingleton();
+            Common.Template.InfoPanelTemplate mainPagePanel = MainPage.MainPagePanel.getSingleton();
             Common.Template.InfoPanelTemplate ParaPanel = new Parameter.ParameterPanel();
             Common.Template.InfoPanelTemplate instantchartPanel = new InstantChart.InstantChartPanel();
             Common.Template.InfoPanelTemplate historychartPanel = new HistoryChart.HistoryChartPanel();
-            Common.Template.InfoPanelTemplate alramPanel = new Alarm.AlarmPanel();
+            Common.Template.InfoPanelTemplate userAccountPanel = MainPage.UserAccountPanelControl.getSingleton();
             
 
             navigationHashtable.Clear();
 
-            navigationHashtable.Add("AutoMode", automodePanel);
+            navigationHashtable.Add("AutoMode", mainPagePanel);
             navigationHashtable.Add("Parameter", ParaPanel);
             navigationHashtable.Add("InstantChart", instantchartPanel);
             navigationHashtable.Add("HistoryChart", historychartPanel);
-            navigationHashtable.Add("Alarm", alramPanel);
+            navigationHashtable.Add("Alarm", userAccountPanel);
             
 
             foreach (string de in navigationHashtable.Keys)
