@@ -19,11 +19,7 @@ namespace Common.Wizard
         DisabledFinish = 0x00000008,
     }
     public partial class CCWizardForm : Common.Template.InfoPanelTemplate
-    {
-        [System.Runtime.InteropServices.DllImport("gdi32.dll")]
-        public static extern long BitBlt(IntPtr hdcDest, int nXDest, int nYDest, int nWidth, int nHeight, IntPtr hdcSrc, int nXSrc, int nYSrc, int dwRop);
-        private Bitmap memoryImage;
-
+    {        
         #region Public Member
         public const string NextPage = "";
         public const string NoPageChange = null;
@@ -33,10 +29,13 @@ namespace Common.Wizard
         private ArrayList m_pages = new ArrayList();
         private int m_selectedIndex = -1;
 
+        // for Printing
+        [System.Runtime.InteropServices.DllImport("gdi32.dll")]
+        public static extern long BitBlt(IntPtr hdcDest, int nXDest, int nYDest, int nWidth, int nHeight, IntPtr hdcSrc, int nXSrc, int nYSrc, int dwRop);
+        private Bitmap[] memoryImage = new Bitmap[5];
         private PrintPreviewDialog printPreviewDialog1 = new PrintPreviewDialog();
         private PrintDocument printDocument1 = new PrintDocument();
-        private PageSetupDialog dlgPageSetup = new PageSetupDialog();
-
+        private PageSetupDialog dlgPageSetup = new PageSetupDialog();       
         #endregion
 
         #region Ctor
@@ -48,7 +47,7 @@ namespace Common.Wizard
             m_finishButton.Location = m_nextButton.Location;
 
             printDocument1.PrintPage += new PrintPageEventHandler(PD_PrintPage);
-            dlgPageSetup.Document = printDocument1;
+            dlgPageSetup.Document = printDocument1;            
         }
         #endregion
 
@@ -63,15 +62,22 @@ namespace Common.Wizard
             ////每頁的行數，當列印行數超過這個時，要換頁(1.05這個值是根據實際情況中設定的，可以不要)
             //int linesPerPage = (int)(e.MarginBounds.Height * 1.05 / mainFont.GetHeight(e.Graphics));
 
-
-            e.Graphics.DrawImage(memoryImage, 50, 50);
+            //e.HasMorePages = true;
+            //for (int iIdx = 0; iIdx < m_pages.Count; ++iIdx)
+            {
+                e.Graphics.DrawImage(memoryImage[m_selectedIndex], 50, 50);
+                //if (iIdx == m_pages.Count)
+                //    e.HasMorePages = false;
+            }
+            
         }
         private void CaptureScreen()
         {
             Graphics mygraphics = this.CreateGraphics();
             Size s = this.panel1.Size;
-            memoryImage = new Bitmap(s.Width, s.Height, mygraphics);
-            Graphics memoryGraphics = Graphics.FromImage(memoryImage);
+
+            memoryImage[m_selectedIndex] = new Bitmap(s.Width, s.Height, mygraphics);
+            Graphics memoryGraphics = Graphics.FromImage(memoryImage[m_selectedIndex]);
             IntPtr dc1 = mygraphics.GetHdc();
             IntPtr dc2 = memoryGraphics.GetHdc();
             BitBlt(dc2, 0, 0, this.ClientRectangle.Width, this.ClientRectangle.Height, dc1, 0, 0, 13369376);
@@ -104,7 +110,7 @@ namespace Common.Wizard
             if (currentPage != null)
                 currentPage.Visible = false;
             newPage.Visible = true;
-            newPage.Focus();
+            newPage.Focus();                       
         }        
 
         private void OnClickBack(object sender, EventArgs e)
@@ -182,6 +188,7 @@ namespace Common.Wizard
             if (m_selectedIndex != -1)
             {
                 CaptureScreen();
+
                 //設定印A4的一半 直式
                 printDocument1.DefaultPageSettings.Landscape = true;
                 printDocument1.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("pag", 

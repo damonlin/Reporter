@@ -199,6 +199,6 @@
     <value>CCInteriorWizardPage</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Common.Wizard.CCWizardPage, Common, Version=1.0.5370.26067, Culture=neutral, PublicKeyToken=null</value>
+    <value>Common.Wizard.CCWizardPage, Common, Version=1.0.5370.29103, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

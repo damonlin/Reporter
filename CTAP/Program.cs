@@ -11,7 +11,7 @@ namespace Monitor
         /// <summary>
         /// 應用程式的主要進入點。
         /// </summary>
-        [STAThread]
+        [STAThread]      
         static void Main()
         {
             if (System.Diagnostics.Process.GetProcessesByName(System.Diagnostics.Process.GetCurrentProcess().ProcessName).Length > 1)
