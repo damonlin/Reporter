@@ -112,21 +112,21 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="m_headerPanel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
   </data>
   <data name="m_titleLabel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="m_titleLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15.75pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 27.75pt, style=Bold</value>
   </data>
   <data name="m_titleLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -135,23 +135,23 @@
     <value>0, 0</value>
   </data>
   <data name="m_titleLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1101, 60</value>
+    <value>1101, 111</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="m_titleLabel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="m_titleLabel.Text" xml:space="preserve">
-    <value>Sample Header Title</value>
+    <value>CONQUER-TEK CORPORATION</value>
   </data>
   <data name="m_titleLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;m_titleLabel.Name" xml:space="preserve">
     <value>m_titleLabel</value>
   </data>
   <data name="&gt;&gt;m_titleLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;m_titleLabel.Parent" xml:space="preserve">
     <value>m_headerPanel</value>
@@ -166,7 +166,7 @@
     <value>0, 0</value>
   </data>
   <data name="m_headerPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1101, 60</value>
+    <value>1101, 111</value>
   </data>
   <data name="m_headerPanel.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -175,72 +175,15 @@
     <value>m_headerPanel</value>
   </data>
   <data name="&gt;&gt;m_headerPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;m_headerPanel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;m_headerPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="m_subtitleLabel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="m_subtitleLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>標楷體, 14.25pt</value>
-  </data>
-  <data name="m_subtitleLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="m_subtitleLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="m_subtitleLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1097, 85</value>
-  </data>
-  <data name="m_subtitleLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="m_subtitleLabel.Text" xml:space="preserve">
-    <value>Sample header subtitle will help a user complete a certain task in the Sample wizard by clarifying the task in some way.</value>
-  </data>
-  <data name="&gt;&gt;m_subtitleLabel.Name" xml:space="preserve">
-    <value>m_subtitleLabel</value>
-  </data>
-  <data name="&gt;&gt;m_subtitleLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;m_subtitleLabel.Parent" xml:space="preserve">
-    <value>m_SubheaderPanel</value>
-  </data>
-  <data name="&gt;&gt;m_subtitleLabel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="m_SubheaderPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="m_SubheaderPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 717</value>
-  </data>
-  <data name="m_SubheaderPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1101, 89</value>
-  </data>
-  <data name="m_SubheaderPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;m_SubheaderPanel.Name" xml:space="preserve">
-    <value>m_SubheaderPanel</value>
-  </data>
-  <data name="&gt;&gt;m_SubheaderPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;m_SubheaderPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;m_SubheaderPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
@@ -253,6 +196,6 @@
     <value>CCInteriorWizardPage</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Common.Wizard.CCWizardPage, Common, Version=1.0.3793.16354, Culture=neutral, PublicKeyToken=null</value>
+    <value>Common.Wizard.CCWizardPage, Common, Version=1.0.5370.19539, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

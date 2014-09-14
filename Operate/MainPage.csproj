@@ -52,6 +52,12 @@
     <Compile Include="AutoModePanel.Designer.cs">
       <DependentUpon>AutoModePanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="InspectForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InspectForm.designer.cs">
+      <DependentUpon>InspectForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Confirm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,18 @@
     <Compile Include="UserAccountPanelControl.designer.cs">
       <DependentUpon>UserAccountPanelControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="InspectPage1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InspectPage1.Designer.cs">
+      <DependentUpon>InspectPage1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InspectPage2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InspectPage2.Designer.cs">
+      <DependentUpon>InspectPage2.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserLoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +110,9 @@
     <EmbeddedResource Include="AutoModePanel.resx">
       <SubType>Designer</SubType>
       <DependentUpon>AutoModePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InspectForm.resx">
+      <DependentUpon>InspectForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Confirm.resx" />
     <EmbeddedResource Include="NewUserAccountForm.resx">
@@ -107,6 +128,12 @@
     <EmbeddedResource Include="UserAccountPanelControl.resx">
       <DependentUpon>UserAccountPanelControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InspectPage1.resx">
+      <DependentUpon>InspectPage1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InspectPage2.resx">
+      <DependentUpon>InspectPage2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserLoginForm.resx">
       <DependentUpon>UserLoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -118,6 +145,10 @@
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{16C8E8F6-E87C-41A9-AFA0-2D155569212E}</Project>
       <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inspect\Parameter.csproj">
+      <Project>{4ef9de44-9367-4f5c-8362-da4d682d1a62}</Project>
+      <Name>Parameter</Name>
     </ProjectReference>
     <ProjectReference Include="..\Module\ContrelModule.csproj">
       <Project>{8c964985-018d-442b-b6cb-9a7e2bfdbd81}</Project>

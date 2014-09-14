@@ -17,7 +17,7 @@ namespace Common.Wizard
         Finish = 0x00000004,
         DisabledFinish = 0x00000008,
     }
-    public partial class CCWizardForm : Common.Template.SubInfoPanelTemplate
+    public partial class CCWizardForm : Common.Template.InfoPanelTemplate
     {
         #region Public Member
         public const string NextPage = "";
