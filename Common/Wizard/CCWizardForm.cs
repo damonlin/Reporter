@@ -6,6 +6,7 @@ using System.Data;
 using System.Text;
 using System.Windows.Forms;
 using System.Collections;
+using System.Drawing.Printing;
 
 namespace Common.Wizard
 {    
@@ -19,6 +20,10 @@ namespace Common.Wizard
     }
     public partial class CCWizardForm : Common.Template.InfoPanelTemplate
     {
+        [System.Runtime.InteropServices.DllImport("gdi32.dll")]
+        public static extern long BitBlt(IntPtr hdcDest, int nXDest, int nYDest, int nWidth, int nHeight, IntPtr hdcSrc, int nXSrc, int nYSrc, int dwRop);
+        private Bitmap memoryImage;
+
         #region Public Member
         public const string NextPage = "";
         public const string NoPageChange = null;
@@ -27,6 +32,11 @@ namespace Common.Wizard
         #region Private Member
         private ArrayList m_pages = new ArrayList();
         private int m_selectedIndex = -1;
+
+        private PrintPreviewDialog printPreviewDialog1 = new PrintPreviewDialog();
+        private PrintDocument printDocument1 = new PrintDocument();
+        private PageSetupDialog dlgPageSetup = new PageSetupDialog();
+
         #endregion
 
         #region Ctor
@@ -35,11 +45,40 @@ namespace Common.Wizard
             InitializeComponent();
 
             // Ensure Finish and Next buttons are positioned similarly
-            m_finishButton.Location = m_nextButton.Location;            
+            m_finishButton.Location = m_nextButton.Location;
+
+            printDocument1.PrintPage += new PrintPageEventHandler(PD_PrintPage);
+            dlgPageSetup.Document = printDocument1;
         }
         #endregion
 
         #region Private Method
+        void PD_PrintPage(object sender, PrintPageEventArgs e)
+        {
+            //float leftMargin = (e.MarginBounds.Left) * 3 / 4;　 //左邊距
+            //float topMargin = e.MarginBounds.Top * 2 / 3;　　　 //頂邊距
+            //float verticalPosition = topMargin;　　　　　　　　 //初始化垂直位置，設為頂邊距
+            //Font mainFont = new Font("Courier New", 10);//列印的字體
+
+            ////每頁的行數，當列印行數超過這個時，要換頁(1.05這個值是根據實際情況中設定的，可以不要)
+            //int linesPerPage = (int)(e.MarginBounds.Height * 1.05 / mainFont.GetHeight(e.Graphics));
+
+
+            e.Graphics.DrawImage(memoryImage, 50, 50);
+        }
+        private void CaptureScreen()
+        {
+            Graphics mygraphics = this.CreateGraphics();
+            Size s = this.panel1.Size;
+            memoryImage = new Bitmap(s.Width, s.Height, mygraphics);
+            Graphics memoryGraphics = Graphics.FromImage(memoryImage);
+            IntPtr dc1 = mygraphics.GetHdc();
+            IntPtr dc2 = memoryGraphics.GetHdc();
+            BitBlt(dc2, 0, 0, this.ClientRectangle.Width, this.ClientRectangle.Height, dc1, 0, 0, 13369376);
+            mygraphics.ReleaseHdc(dc1);
+            memoryGraphics.ReleaseHdc(dc2);
+        }
+
         private void ActivatePage(int newIndex)
         {
             // Ensure the index is valid
@@ -142,14 +181,26 @@ namespace Common.Wizard
             // Ensure a page is currently selected
             if (m_selectedIndex != -1)
             {
-                // Inform selected page that the Finish button was clicked
-                CCWizardPage page = (CCWizardPage)m_pages[m_selectedIndex];
-                if (page.OnWizardFinish())
-                {
-                    // Deactivate page and close wizard
-                    //if (page.OnKillActive())
-                    //    DialogResult = DialogResult.OK;
-                }
+                CaptureScreen();
+                //設定印A4的一半 直式
+                printDocument1.DefaultPageSettings.Landscape = true;
+                printDocument1.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("pag", 
+                    this.printDocument1.DefaultPageSettings.PaperSize.Width*2, 
+                    this.printDocument1.DefaultPageSettings.PaperSize.Height);
+
+                printPreviewDialog1.Document = printDocument1;
+                printPreviewDialog1.ShowDialog();
+
+
+                //// Inform selected page that the Finish button was clicked
+                //CCWizardPage page = (CCWizardPage)m_pages[m_selectedIndex];
+                //if (page.OnWizardFinish())
+                //{
+                //    // Deactivate page and close wizard
+                //    //if (page.OnKillActive())
+                //    //    DialogResult = DialogResult.OK;
+
+                //}
             }
         }
 

@@ -43,7 +43,7 @@
             // 
             this.m_backButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.m_backButton.Font = new System.Drawing.Font("PMingLiU", 12F);
-            this.m_backButton.Location = new System.Drawing.Point(1448, 3);
+            this.m_backButton.Location = new System.Drawing.Point(1309, 3);
             this.m_backButton.Name = "m_backButton";
             this.m_backButton.Size = new System.Drawing.Size(133, 32);
             this.m_backButton.TabIndex = 0;
@@ -55,7 +55,7 @@
             // 
             this.m_nextButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.m_nextButton.Font = new System.Drawing.Font("PMingLiU", 12F);
-            this.m_nextButton.Location = new System.Drawing.Point(1309, 3);
+            this.m_nextButton.Location = new System.Drawing.Point(1448, 3);
             this.m_nextButton.Name = "m_nextButton";
             this.m_nextButton.Size = new System.Drawing.Size(133, 32);
             this.m_nextButton.TabIndex = 1;
@@ -73,6 +73,7 @@
             this.m_cancelButton.TabIndex = 2;
             this.m_cancelButton.Text = "取消";
             this.m_cancelButton.UseVisualStyleBackColor = true;
+            this.m_cancelButton.Visible = false;
             this.m_cancelButton.Click += new System.EventHandler(this.OnClickCancel);
             // 
             // m_finishButton
@@ -83,13 +84,12 @@
             this.m_finishButton.Name = "m_finishButton";
             this.m_finishButton.Size = new System.Drawing.Size(133, 32);
             this.m_finishButton.TabIndex = 3;
-            this.m_finishButton.Text = "&完成";
+            this.m_finishButton.Text = "&列印";
             this.m_finishButton.UseVisualStyleBackColor = true;
             this.m_finishButton.Click += new System.EventHandler(this.OnClickFinish);
             // 
             // panel1
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
@@ -114,8 +114,8 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.m_finishButton);
-            this.flowLayoutPanel1.Controls.Add(this.m_backButton);
             this.flowLayoutPanel1.Controls.Add(this.m_nextButton);
+            this.flowLayoutPanel1.Controls.Add(this.m_backButton);
             this.flowLayoutPanel1.Controls.Add(this.m_cancelButton);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
