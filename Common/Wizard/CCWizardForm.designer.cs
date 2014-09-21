@@ -45,7 +45,7 @@
             this.m_backButton.Font = new System.Drawing.Font("PMingLiU", 12F);
             this.m_backButton.Location = new System.Drawing.Point(3, 79);
             this.m_backButton.Name = "m_backButton";
-            this.m_backButton.Size = new System.Drawing.Size(133, 70);
+            this.m_backButton.Size = new System.Drawing.Size(245, 70);
             this.m_backButton.TabIndex = 0;
             this.m_backButton.Text = "< &上一頁";
             this.m_backButton.UseVisualStyleBackColor = true;
@@ -57,7 +57,7 @@
             this.m_nextButton.Font = new System.Drawing.Font("PMingLiU", 12F);
             this.m_nextButton.Location = new System.Drawing.Point(3, 155);
             this.m_nextButton.Name = "m_nextButton";
-            this.m_nextButton.Size = new System.Drawing.Size(133, 70);
+            this.m_nextButton.Size = new System.Drawing.Size(245, 70);
             this.m_nextButton.TabIndex = 1;
             this.m_nextButton.Text = "&下一頁 >";
             this.m_nextButton.UseVisualStyleBackColor = true;
@@ -69,7 +69,7 @@
             this.m_cancelButton.Font = new System.Drawing.Font("PMingLiU", 12F);
             this.m_cancelButton.Location = new System.Drawing.Point(3, 231);
             this.m_cancelButton.Name = "m_cancelButton";
-            this.m_cancelButton.Size = new System.Drawing.Size(133, 70);
+            this.m_cancelButton.Size = new System.Drawing.Size(245, 70);
             this.m_cancelButton.TabIndex = 2;
             this.m_cancelButton.Text = "取消";
             this.m_cancelButton.UseVisualStyleBackColor = true;
@@ -82,7 +82,7 @@
             this.m_finishButton.Font = new System.Drawing.Font("PMingLiU", 12F);
             this.m_finishButton.Location = new System.Drawing.Point(3, 3);
             this.m_finishButton.Name = "m_finishButton";
-            this.m_finishButton.Size = new System.Drawing.Size(133, 70);
+            this.m_finishButton.Size = new System.Drawing.Size(245, 70);
             this.m_finishButton.TabIndex = 3;
             this.m_finishButton.Text = "&列印";
             this.m_finishButton.UseVisualStyleBackColor = true;
@@ -113,7 +113,7 @@
             // 
             // flowLayoutPanel2
             // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.Gray;
             this.flowLayoutPanel2.Controls.Add(this.m_finishButton);
             this.flowLayoutPanel2.Controls.Add(this.m_backButton);
             this.flowLayoutPanel2.Controls.Add(this.m_nextButton);

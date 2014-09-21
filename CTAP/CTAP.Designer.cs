@@ -34,14 +34,9 @@
             this.baseStatusStrip = new System.Windows.Forms.StatusStrip();
             this.displayDateLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.displayTimeLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.baseTimer = new System.Windows.Forms.Timer(this.components);
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.viewPanel = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.operatorIDButton = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.ShutdownRadioButton = new System.Windows.Forms.RadioButton();
             this.AlarmlistRadioButton = new System.Windows.Forms.RadioButton();
@@ -53,8 +48,7 @@
             this.HistoryChartRadioButton = new System.Windows.Forms.RadioButton();
             this.btnDecPanel = new System.Windows.Forms.Panel();
             this.baseStatusStrip.SuspendLayout();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,29 +79,18 @@
             this.displayTimeLabel.Name = "displayTimeLabel";
             resources.ApplyResources(this.displayTimeLabel, "displayTimeLabel");
             // 
-            // textBox1
-            // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.BackColor = System.Drawing.Color.Black;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Tag = "";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(195)))), ((int)(((byte)(222)))));
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Name = "label1";
-            // 
             // baseTimer
             // 
             this.baseTimer.Enabled = true;
             this.baseTimer.Interval = 1000;
             this.baseTimer.Tick += new System.EventHandler(this.baseTimer_Tick);
+            // 
+            // tableLayoutPanel1
+            // 
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.viewPanel, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel3, 0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // viewPanel
             // 
@@ -115,43 +98,8 @@
             this.viewPanel.BackColor = System.Drawing.Color.White;
             this.viewPanel.Name = "viewPanel";
             // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(233)))), ((int)(((byte)(216)))));
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.label2);
-            this.panel6.Controls.Add(this.operatorIDButton);
-            this.panel6.Controls.Add(this.pictureBox1);
-            this.panel6.Controls.Add(this.label1);
-            this.panel6.Controls.Add(this.textBox1);
-            resources.ApplyResources(this.panel6, "panel6");
-            this.panel6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel6.Name = "panel6";
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(195)))), ((int)(((byte)(222)))));
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Name = "label2";
-            // 
-            // operatorIDButton
-            // 
-            resources.ApplyResources(this.operatorIDButton, "operatorIDButton");
-            this.operatorIDButton.BackColor = System.Drawing.Color.Gainsboro;
-            this.operatorIDButton.Name = "operatorIDButton";
-            this.operatorIDButton.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(233)))), ((int)(((byte)(216)))));
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            // 
             // panel3
             // 
-            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.BackColor = System.Drawing.Color.Gray;
             this.panel3.Controls.Add(this.ShutdownRadioButton);
             this.panel3.Controls.Add(this.AlarmlistRadioButton);
@@ -162,6 +110,7 @@
             this.panel3.Controls.Add(this.AlarmRadioButton);
             this.panel3.Controls.Add(this.HistoryChartRadioButton);
             this.panel3.Controls.Add(this.btnDecPanel);
+            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
             // 
             // ShutdownRadioButton
@@ -186,7 +135,6 @@
             this.AlarmlistRadioButton.Name = "AlarmlistRadioButton";
             this.AlarmlistRadioButton.TabStop = true;
             this.AlarmlistRadioButton.UseVisualStyleBackColor = false;
-            this.AlarmlistRadioButton.Click += new System.EventHandler(this.Alarmlist_Click);
             // 
             // ParameterRadioButton
             // 
@@ -219,7 +167,7 @@
             this.PrintScreenRadioButton.Name = "PrintScreenRadioButton";
             this.PrintScreenRadioButton.TabStop = true;
             this.PrintScreenRadioButton.UseVisualStyleBackColor = false;
-            this.PrintScreenRadioButton.Click += new System.EventHandler(this.PrintScreen_Click);
+            this.PrintScreenRadioButton.CheckedChanged += new System.EventHandler(this.navigatorBtn_CheckedChanged);
             // 
             // InstantChartRadioButton
             // 
@@ -266,9 +214,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ControlBox = false;
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.viewPanel);
-            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.baseStatusStrip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CTAP";
@@ -276,9 +222,8 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.baseStatusStrip.ResumeLayout(false);
             this.baseStatusStrip.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -288,26 +233,21 @@
         #endregion
 
         private System.Windows.Forms.StatusStrip baseStatusStrip;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripStatusLabel displayDateLabel;
         private System.Windows.Forms.ToolStripStatusLabel displayTimeLabel;
         private System.Windows.Forms.Timer baseTimer;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel viewPanel;
-        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.RadioButton AlarmRadioButton;
-        private System.Windows.Forms.RadioButton PrintScreenRadioButton;
-        private System.Windows.Forms.RadioButton AutoModeRadioButton;
-        private System.Windows.Forms.RadioButton HistoryChartRadioButton;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button operatorIDButton;        
-        private System.Windows.Forms.RadioButton InstantChartRadioButton;
-        private System.Windows.Forms.RadioButton ParameterRadioButton;
-        private System.Windows.Forms.Panel btnDecPanel;
         private System.Windows.Forms.RadioButton ShutdownRadioButton;
         private System.Windows.Forms.RadioButton AlarmlistRadioButton;
+        private System.Windows.Forms.RadioButton ParameterRadioButton;
+        private System.Windows.Forms.RadioButton AutoModeRadioButton;
+        private System.Windows.Forms.RadioButton PrintScreenRadioButton;
+        private System.Windows.Forms.RadioButton InstantChartRadioButton;
+        private System.Windows.Forms.RadioButton AlarmRadioButton;
+        private System.Windows.Forms.RadioButton HistoryChartRadioButton;
+        private System.Windows.Forms.Panel btnDecPanel;
     }
 }
 

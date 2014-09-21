@@ -55,7 +55,7 @@ namespace Monitor
         {                        
             //Common.Template.InfoPanelTemplate mainPagePanel = MainPage.MainPagePanel.getSingleton();
             Common.Template.InfoPanelTemplate mainPagePanel = new MainPage.InspectForm();
-            Common.Template.InfoPanelTemplate ParaPanel = new Parameter.ParameterPanel();
+            Common.Template.InfoPanelTemplate ParaPanel = new MainPage.TestForm();
             Common.Template.InfoPanelTemplate instantchartPanel = new InstantChart.InstantChartPanel();
             Common.Template.InfoPanelTemplate historychartPanel = new HistoryChart.HistoryChartPanel();
             Common.Template.InfoPanelTemplate userAccountPanel = MainPage.UserAccountPanelControl.getSingleton();
@@ -107,7 +107,10 @@ namespace Monitor
                     szNavigationString = de;
                 }
             }
-            btnDecPanel.Location = new Point(((RadioButton)sender).Location.X + ((RadioButton)sender).Size.Width / 2 - btnDecPanel.Size.Width / 2, btnDecPanel.Location.Y);
+            //btnDecPanel.Location = new Point(((RadioButton)sender).Location.X + ((RadioButton)sender).Size.Width / 2 - btnDecPanel.Size.Width / 2, btnDecPanel.Location.Y);
+            btnDecPanel.Location = new Point( 6 ,
+                                              ((RadioButton)sender).Location.Y + ((RadioButton)sender).Size.Height / 2 - btnDecPanel.Size.Height / 2);
+            //panel3.Location = new Point(0, btnDecPanel.Location.Y+5);
         }
 
         private void functionBtn_CheckedChanged(object sender, EventArgs e)
@@ -151,7 +154,7 @@ namespace Monitor
 
         public static void SetOperatorID(string pszOperatorID)
         {
-            singleton.operatorIDButton.Text = pszOperatorID;
+            //singleton.operatorIDButton.Text = pszOperatorID;
         }
 
         private void SearchControl(Control p_Control)

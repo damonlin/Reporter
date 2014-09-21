@@ -191,13 +191,17 @@ namespace Common.Wizard
 
                 //設定印A4的一半 直式
                 printDocument1.DefaultPageSettings.Landscape = true;
-                printDocument1.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("pag", 
-                    this.printDocument1.DefaultPageSettings.PaperSize.Width*2, 
-                    this.printDocument1.DefaultPageSettings.PaperSize.Height);
+                PaperSize ps =new PaperSize("A4",// 595, 842
+                                            this.printDocument1.DefaultPageSettings.PaperSize.Width,
+                                            this.printDocument1.DefaultPageSettings.PaperSize.Height);
+                ps.RawKind = 9;
+                printDocument1.DefaultPageSettings.PaperSize = ps;                             
 
                 printPreviewDialog1.Document = printDocument1;
+                dlgPageSetup.Document = printDocument1;
+                dlgPageSetup.ShowDialog();
                 printPreviewDialog1.ShowDialog();
-
+                
 
                 //// Inform selected page that the Finish button was clicked
                 //CCWizardPage page = (CCWizardPage)m_pages[m_selectedIndex];

@@ -37,7 +37,7 @@
             // m_headerPanel
             // 
             this.m_headerPanel.BackColor = System.Drawing.Color.White;
-            this.m_headerPanel.BackgroundImage = global::Common.Properties.Resources.未命名5;
+            this.m_headerPanel.BackgroundImage = global::Common.Properties.Resources.未命名8;
             resources.ApplyResources(this.m_headerPanel, "m_headerPanel");
             this.m_headerPanel.Controls.Add(this.m_titleLabel);
             this.m_headerPanel.Name = "m_headerPanel";

@@ -38,7 +38,7 @@ namespace AutoMode
            
             try
             {
-                m_PLCInterface.Open();
+                //m_PLCInterface.Open();
             }
             catch (Exception e)
             {
