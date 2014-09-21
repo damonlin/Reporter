@@ -42,7 +42,7 @@
             // m_backButton
             // 
             this.m_backButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_backButton.Font = new System.Drawing.Font("PMingLiU", 12F);
+            this.m_backButton.Font = new System.Drawing.Font("PMingLiU", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.m_backButton.Location = new System.Drawing.Point(3, 79);
             this.m_backButton.Name = "m_backButton";
             this.m_backButton.Size = new System.Drawing.Size(245, 70);
@@ -54,7 +54,7 @@
             // m_nextButton
             // 
             this.m_nextButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_nextButton.Font = new System.Drawing.Font("PMingLiU", 12F);
+            this.m_nextButton.Font = new System.Drawing.Font("PMingLiU", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.m_nextButton.Location = new System.Drawing.Point(3, 155);
             this.m_nextButton.Name = "m_nextButton";
             this.m_nextButton.Size = new System.Drawing.Size(245, 70);
@@ -66,7 +66,7 @@
             // m_cancelButton
             // 
             this.m_cancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_cancelButton.Font = new System.Drawing.Font("PMingLiU", 12F);
+            this.m_cancelButton.Font = new System.Drawing.Font("PMingLiU", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.m_cancelButton.Location = new System.Drawing.Point(3, 231);
             this.m_cancelButton.Name = "m_cancelButton";
             this.m_cancelButton.Size = new System.Drawing.Size(245, 70);
@@ -79,7 +79,7 @@
             // m_finishButton
             // 
             this.m_finishButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_finishButton.Font = new System.Drawing.Font("PMingLiU", 12F);
+            this.m_finishButton.Font = new System.Drawing.Font("PMingLiU", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.m_finishButton.Location = new System.Drawing.Point(3, 3);
             this.m_finishButton.Name = "m_finishButton";
             this.m_finishButton.Size = new System.Drawing.Size(245, 70);

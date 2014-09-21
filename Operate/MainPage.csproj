@@ -58,11 +58,34 @@
     <Compile Include="AutoModePanel.Designer.cs">
       <DependentUpon>AutoModePanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Confirm1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Confirm.resx</DependentUpon>
+    </Compile>
     <Compile Include="Input.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Input.Designer.cs">
       <DependentUpon>Input.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportForm.designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPage1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportPage1.Designer.cs">
+      <DependentUpon>ReportPage1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPage2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportPage2.Designer.cs">
+      <DependentUpon>ReportPage2.cs</DependentUpon>
     </Compile>
     <Compile Include="TestForm.cs">
       <SubType>UserControl</SubType>
@@ -150,13 +173,25 @@
     <EmbeddedResource Include="Input.resx">
       <DependentUpon>Input.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportPage1.resx">
+      <DependentUpon>ReportPage1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportPage2.resx">
+      <DependentUpon>ReportPage2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TestForm.resx">
       <DependentUpon>TestForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InspectForm.resx">
       <DependentUpon>InspectForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Confirm.resx" />
+    <EmbeddedResource Include="Confirm.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Confirm1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="InspectPage3.resx">
       <DependentUpon>InspectPage3.cs</DependentUpon>
     </EmbeddedResource>
@@ -221,6 +256,8 @@
   <ItemGroup>
     <Content Include="Resources\Arrow Down.png" />
     <Content Include="Resources\Arrow Up.png" />
+    <None Include="Resources\body.png" />
+    <None Include="Resources\axis.png" />
     <Content Include="Resources\Button-Delete-icon.png" />
     <Content Include="Resources\Button-Download-icon.png" />
     <Content Include="Resources\Button-Forward-icon.png" />

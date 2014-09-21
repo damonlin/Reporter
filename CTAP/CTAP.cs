@@ -56,9 +56,9 @@ namespace Monitor
             //Common.Template.InfoPanelTemplate mainPagePanel = MainPage.MainPagePanel.getSingleton();
             Common.Template.InfoPanelTemplate mainPagePanel = new MainPage.InspectForm();
             Common.Template.InfoPanelTemplate ParaPanel = new MainPage.TestForm();
-            Common.Template.InfoPanelTemplate instantchartPanel = new InstantChart.InstantChartPanel();
-            Common.Template.InfoPanelTemplate historychartPanel = new HistoryChart.HistoryChartPanel();
-            Common.Template.InfoPanelTemplate userAccountPanel = MainPage.UserAccountPanelControl.getSingleton();
+            Common.Template.InfoPanelTemplate instantchartPanel = new MainPage.ReportForm();
+            //Common.Template.InfoPanelTemplate historychartPanel = new HistoryChart.HistoryChartPanel();
+            //Common.Template.InfoPanelTemplate userAccountPanel = MainPage.UserAccountPanelControl.getSingleton();
             
 
             navigationHashtable.Clear();
@@ -66,8 +66,8 @@ namespace Monitor
             navigationHashtable.Add("AutoMode", mainPagePanel);
             navigationHashtable.Add("Parameter", ParaPanel);
             navigationHashtable.Add("InstantChart", instantchartPanel);
-            navigationHashtable.Add("HistoryChart", historychartPanel);
-            navigationHashtable.Add("Alarm", userAccountPanel);
+            //navigationHashtable.Add("HistoryChart", historychartPanel);
+            //navigationHashtable.Add("Alarm", userAccountPanel);
             
 
             foreach (string de in navigationHashtable.Keys)
