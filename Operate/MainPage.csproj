@@ -35,9 +35,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Dotnetrix.TabControl">
-      <HintPath>..\CTAP\bin\Debug\Library\Dotnetrix.TabControl.dll</HintPath>
-    </Reference>
     <Reference Include="IniTool">
       <HintPath>..\CTAP\bin\Debug\Library\IniTool.dll</HintPath>
     </Reference>

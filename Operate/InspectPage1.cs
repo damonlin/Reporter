@@ -7,17 +7,57 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Drawing.Printing;
+using IniTool;
 
 namespace AutoMode
 {
     public partial class InspectPage1 : Common.Wizard.CCInteriorWizardPage
     {
+        private const string strINIPath = "INI\\InspectPage1.INI";
+        private List<ComboBox> m_cbList = new List<ComboBox>();
         public InspectPage1()
         {
             InitializeComponent();
 
+            InitializeComboxList();            
+
             // 修正 TableLayout 閃爍問題
             MakeTablelayoutSmooth();
+
+            LoadIniFile();
+        }
+
+        private void InitializeComboxList()
+        {
+            m_cbList.Add(CustomerName);
+            m_cbList.Add(CustomAddress);
+            m_cbList.Add(CustomExtension);
+            m_cbList.Add(Salesman);
+        }
+
+        private void LoadIniFile()
+        {            
+            IniFile iniFile = new IniFile(strINIPath);
+
+            foreach( ComboBox cb in m_cbList )
+            {
+                List<KeyValuePair<string, string>> KeyValuePair = iniFile.GetSectionValuesAsList(cb.Name);
+
+                foreach (KeyValuePair<string, string> val in KeyValuePair)
+                {
+                    cb.Items.Add(val.Value);
+                }          
+            }                                          
+        }
+
+        private void SaveIniFile(ComboBox cb)
+        {
+            IniFile iniFile = new IniFile(strINIPath);
+
+            for (int iIdx = 1; iIdx < cb.Items.Count; ++iIdx)
+            {
+                iniFile.WriteValue(cb.Name, iIdx.ToString(), cb.Items[iIdx].ToString());
+            }            
         }
 
         private void MakeTablelayoutSmooth()
@@ -113,6 +153,8 @@ namespace AutoMode
                     comboBox.SelectedIndex = comboBox.Items.Count-1;
                 }
             }
+
+            SaveIniFile(comboBox);
         }
 
         //private void button1_Click(object sender, EventArgs e)

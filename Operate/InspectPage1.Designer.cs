@@ -125,13 +125,13 @@
             this.comboBox10 = new System.Windows.Forms.ComboBox();
             this.label76 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.CustomerName = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.CustomAddress = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.CustomExtension = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
@@ -142,7 +142,7 @@
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.Salesman = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -1453,7 +1453,7 @@
             this.tableLayoutPanel4.ColumnCount = 2;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Controls.Add(this.comboBox1, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.CustomerName, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(4, 4);
@@ -1464,17 +1464,17 @@
             this.tableLayoutPanel4.TabIndex = 0;
             this.tableLayoutPanel4.CellPaint += new System.Windows.Forms.TableLayoutCellPaintEventHandler(this.tableLayoutPanel4_CellPaint);
             // 
-            // comboBox1
+            // CustomerName
             // 
-            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.CustomerName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CustomerName.FormattingEnabled = true;
+            this.CustomerName.Items.AddRange(new object[] {
             "新增項目"});
-            this.comboBox1.Location = new System.Drawing.Point(404, 3);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(396, 20);
-            this.comboBox1.TabIndex = 0;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox12_SelectedIndexChanged);
+            this.CustomerName.Location = new System.Drawing.Point(404, 3);
+            this.CustomerName.Name = "CustomerName";
+            this.CustomerName.Size = new System.Drawing.Size(396, 20);
+            this.CustomerName.TabIndex = 0;
+            this.CustomerName.SelectedIndexChanged += new System.EventHandler(this.comboBox12_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -1494,7 +1494,7 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.Controls.Add(this.label4, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox2, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.CustomAddress, 1, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(4, 25);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -1516,24 +1516,24 @@
             this.label4.Text = "客戶地址:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // comboBox2
+            // CustomAddress
             // 
-            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.CustomAddress.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CustomAddress.FormattingEnabled = true;
+            this.CustomAddress.Items.AddRange(new object[] {
             "新增項目"});
-            this.comboBox2.Location = new System.Drawing.Point(404, 3);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(396, 20);
-            this.comboBox2.TabIndex = 1;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox12_SelectedIndexChanged);
+            this.CustomAddress.Location = new System.Drawing.Point(404, 3);
+            this.CustomAddress.Name = "CustomAddress";
+            this.CustomAddress.Size = new System.Drawing.Size(396, 20);
+            this.CustomAddress.TabIndex = 1;
+            this.CustomAddress.SelectedIndexChanged += new System.EventHandler(this.comboBox12_SelectedIndexChanged);
             // 
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.ColumnCount = 2;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Controls.Add(this.comboBox3, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.CustomExtension, 1, 0);
             this.tableLayoutPanel6.Controls.Add(this.label5, 0, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(4, 46);
@@ -1544,17 +1544,17 @@
             this.tableLayoutPanel6.TabIndex = 2;
             this.tableLayoutPanel6.CellPaint += new System.Windows.Forms.TableLayoutCellPaintEventHandler(this.tableLayoutPanel6_CellPaint);
             // 
-            // comboBox3
+            // CustomExtension
             // 
-            this.comboBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.CustomExtension.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CustomExtension.FormattingEnabled = true;
+            this.CustomExtension.Items.AddRange(new object[] {
             "新增項目"});
-            this.comboBox3.Location = new System.Drawing.Point(404, 3);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(396, 20);
-            this.comboBox3.TabIndex = 0;
-            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox12_SelectedIndexChanged);
+            this.CustomExtension.Location = new System.Drawing.Point(404, 3);
+            this.CustomExtension.Name = "CustomExtension";
+            this.CustomExtension.Size = new System.Drawing.Size(396, 20);
+            this.CustomExtension.TabIndex = 0;
+            this.CustomExtension.SelectedIndexChanged += new System.EventHandler(this.comboBox12_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -1642,7 +1642,7 @@
             this.tableLayoutPanel8.Controls.Add(this.comboBox6, 3, 0);
             this.tableLayoutPanel8.Controls.Add(this.label9, 2, 0);
             this.tableLayoutPanel8.Controls.Add(this.label8, 0, 0);
-            this.tableLayoutPanel8.Controls.Add(this.comboBox5, 1, 0);
+            this.tableLayoutPanel8.Controls.Add(this.Salesman, 1, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel8.Location = new System.Drawing.Point(4, 88);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
@@ -1689,17 +1689,17 @@
             this.label8.Text = "業務人員:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // comboBox5
+            // Salesman
             // 
-            this.comboBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.Salesman.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Salesman.FormattingEnabled = true;
+            this.Salesman.Items.AddRange(new object[] {
             "新增項目"});
-            this.comboBox5.Location = new System.Drawing.Point(203, 3);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(194, 20);
-            this.comboBox5.TabIndex = 1;
-            this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.comboBox12_SelectedIndexChanged);
+            this.Salesman.Location = new System.Drawing.Point(203, 3);
+            this.Salesman.Name = "Salesman";
+            this.Salesman.Size = new System.Drawing.Size(194, 20);
+            this.Salesman.TabIndex = 1;
+            this.Salesman.SelectedIndexChanged += new System.EventHandler(this.comboBox12_SelectedIndexChanged);
             // 
             // tableLayoutPanel9
             // 
@@ -2511,13 +2511,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox CustomerName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox CustomAddress;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox CustomExtension;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.Label label6;
@@ -2528,7 +2528,7 @@
         private System.Windows.Forms.ComboBox comboBox6;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox Salesman;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox comboBox7;
