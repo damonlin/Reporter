@@ -99,15 +99,15 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.PartName1 = new System.Windows.Forms.ComboBox();
+            this.PartName2 = new System.Windows.Forms.ComboBox();
+            this.PartName3 = new System.Windows.Forms.ComboBox();
+            this.PartName4 = new System.Windows.Forms.ComboBox();
+            this.PartName5 = new System.Windows.Forms.ComboBox();
+            this.PartName6 = new System.Windows.Forms.ComboBox();
+            this.PartName7 = new System.Windows.Forms.ComboBox();
+            this.PartName8 = new System.Windows.Forms.ComboBox();
+            this.PartName9 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.label12 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
@@ -445,15 +445,15 @@
             this.tableLayoutPanel5.Controls.Add(this.textBox6, 1, 6);
             this.tableLayoutPanel5.Controls.Add(this.textBox7, 1, 7);
             this.tableLayoutPanel5.Controls.Add(this.textBox8, 1, 8);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox1, 2, 1);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox2, 2, 2);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox3, 2, 3);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox4, 2, 4);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox5, 2, 5);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox6, 2, 6);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox7, 2, 7);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox8, 2, 8);
-            this.tableLayoutPanel5.Controls.Add(this.comboBox9, 2, 9);
+            this.tableLayoutPanel5.Controls.Add(this.PartName1, 2, 1);
+            this.tableLayoutPanel5.Controls.Add(this.PartName2, 2, 2);
+            this.tableLayoutPanel5.Controls.Add(this.PartName3, 2, 3);
+            this.tableLayoutPanel5.Controls.Add(this.PartName4, 2, 4);
+            this.tableLayoutPanel5.Controls.Add(this.PartName5, 2, 5);
+            this.tableLayoutPanel5.Controls.Add(this.PartName6, 2, 6);
+            this.tableLayoutPanel5.Controls.Add(this.PartName7, 2, 7);
+            this.tableLayoutPanel5.Controls.Add(this.PartName8, 2, 8);
+            this.tableLayoutPanel5.Controls.Add(this.PartName9, 2, 9);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(4, 23);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -942,86 +942,86 @@
             this.textBox8.Size = new System.Drawing.Size(98, 22);
             this.textBox8.TabIndex = 52;
             // 
-            // comboBox1
+            // PartName1
             // 
-            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(159, 19);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(306, 20);
-            this.comboBox1.TabIndex = 54;
+            this.PartName1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PartName1.FormattingEnabled = true;
+            this.PartName1.Location = new System.Drawing.Point(159, 19);
+            this.PartName1.Name = "PartName1";
+            this.PartName1.Size = new System.Drawing.Size(306, 20);
+            this.PartName1.TabIndex = 54;
             // 
-            // comboBox2
+            // PartName2
             // 
-            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(159, 35);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(306, 20);
-            this.comboBox2.TabIndex = 55;
+            this.PartName2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PartName2.FormattingEnabled = true;
+            this.PartName2.Location = new System.Drawing.Point(159, 35);
+            this.PartName2.Name = "PartName2";
+            this.PartName2.Size = new System.Drawing.Size(306, 20);
+            this.PartName2.TabIndex = 55;
             // 
-            // comboBox3
+            // PartName3
             // 
-            this.comboBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(159, 51);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(306, 20);
-            this.comboBox3.TabIndex = 56;
+            this.PartName3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PartName3.FormattingEnabled = true;
+            this.PartName3.Location = new System.Drawing.Point(159, 51);
+            this.PartName3.Name = "PartName3";
+            this.PartName3.Size = new System.Drawing.Size(306, 20);
+            this.PartName3.TabIndex = 56;
             // 
-            // comboBox4
+            // PartName4
             // 
-            this.comboBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(159, 67);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(306, 20);
-            this.comboBox4.TabIndex = 57;
+            this.PartName4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PartName4.FormattingEnabled = true;
+            this.PartName4.Location = new System.Drawing.Point(159, 67);
+            this.PartName4.Name = "PartName4";
+            this.PartName4.Size = new System.Drawing.Size(306, 20);
+            this.PartName4.TabIndex = 57;
             // 
-            // comboBox5
+            // PartName5
             // 
-            this.comboBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(159, 83);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(306, 20);
-            this.comboBox5.TabIndex = 58;
+            this.PartName5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PartName5.FormattingEnabled = true;
+            this.PartName5.Location = new System.Drawing.Point(159, 83);
+            this.PartName5.Name = "PartName5";
+            this.PartName5.Size = new System.Drawing.Size(306, 20);
+            this.PartName5.TabIndex = 58;
             // 
-            // comboBox6
+            // PartName6
             // 
-            this.comboBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(159, 99);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(306, 20);
-            this.comboBox6.TabIndex = 59;
+            this.PartName6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PartName6.FormattingEnabled = true;
+            this.PartName6.Location = new System.Drawing.Point(159, 99);
+            this.PartName6.Name = "PartName6";
+            this.PartName6.Size = new System.Drawing.Size(306, 20);
+            this.PartName6.TabIndex = 59;
             // 
-            // comboBox7
+            // PartName7
             // 
-            this.comboBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(159, 115);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(306, 20);
-            this.comboBox7.TabIndex = 60;
+            this.PartName7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PartName7.FormattingEnabled = true;
+            this.PartName7.Location = new System.Drawing.Point(159, 115);
+            this.PartName7.Name = "PartName7";
+            this.PartName7.Size = new System.Drawing.Size(306, 20);
+            this.PartName7.TabIndex = 60;
             // 
-            // comboBox8
+            // PartName8
             // 
-            this.comboBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(159, 131);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(306, 20);
-            this.comboBox8.TabIndex = 61;
+            this.PartName8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PartName8.FormattingEnabled = true;
+            this.PartName8.Location = new System.Drawing.Point(159, 131);
+            this.PartName8.Name = "PartName8";
+            this.PartName8.Size = new System.Drawing.Size(306, 20);
+            this.PartName8.TabIndex = 61;
             // 
-            // comboBox9
+            // PartName9
             // 
-            this.comboBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(159, 147);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(306, 20);
-            this.comboBox9.TabIndex = 62;
+            this.PartName9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PartName9.FormattingEnabled = true;
+            this.PartName9.Location = new System.Drawing.Point(159, 147);
+            this.PartName9.Name = "PartName9";
+            this.PartName9.Size = new System.Drawing.Size(306, 20);
+            this.PartName9.TabIndex = 62;
             // 
             // tableLayoutPanel6
             // 
@@ -1171,15 +1171,15 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.ComboBox PartName1;
+        private System.Windows.Forms.ComboBox PartName2;
+        private System.Windows.Forms.ComboBox PartName3;
+        private System.Windows.Forms.ComboBox PartName4;
+        private System.Windows.Forms.ComboBox PartName5;
+        private System.Windows.Forms.ComboBox PartName6;
+        private System.Windows.Forms.ComboBox PartName7;
+        private System.Windows.Forms.ComboBox PartName8;
+        private System.Windows.Forms.ComboBox PartName9;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ListBox listBox1;

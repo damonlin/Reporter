@@ -33,6 +33,16 @@ namespace AutoMode
             m_cbList.Add(CustomAddress);
             m_cbList.Add(CustomExtension);
             m_cbList.Add(Salesman);
+            m_cbList.Add(DisEngineer);
+            m_cbList.Add(PumpType);
+            m_cbList.Add(PumpSeries);
+            m_cbList.Add(MeasureEngineer);
+            m_cbList.Add(RunSpeed);
+            m_cbList.Add(Equipment);
+            m_cbList.Add(DrySeries);
+            m_cbList.Add(RootsSeries);
+            m_cbList.Add(PumpVoltage);
+            
         }
 
         private void LoadIniFile()

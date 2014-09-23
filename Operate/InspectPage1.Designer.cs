@@ -122,7 +122,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.DrySeries = new System.Windows.Forms.ComboBox();
             this.label76 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.CustomerName = new System.Windows.Forms.ComboBox();
@@ -136,34 +136,34 @@
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.PumpType = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.PumpSeries = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.Salesman = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
+            this.DisEngineer = new System.Windows.Forms.ComboBox();
+            this.MeasureEngineer = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
             this.label73 = new System.Windows.Forms.Label();
             this.checkBox41 = new System.Windows.Forms.CheckBox();
             this.checkBox45 = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.RunSpeed = new System.Windows.Forms.ComboBox();
             this.label74 = new System.Windows.Forms.Label();
             this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.Equipment = new System.Windows.Forms.ComboBox();
             this.label75 = new System.Windows.Forms.Label();
             this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
             this.label77 = new System.Windows.Forms.Label();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
+            this.RootsSeries = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel21 = new System.Windows.Forms.TableLayoutPanel();
             this.label78 = new System.Windows.Forms.Label();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
+            this.PumpVoltage = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.label12 = new System.Windows.Forms.Label();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
@@ -1415,7 +1415,7 @@
             this.tableLayoutPanel19.ColumnCount = 2;
             this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel19.Controls.Add(this.comboBox10, 1, 0);
+            this.tableLayoutPanel19.Controls.Add(this.DrySeries, 1, 0);
             this.tableLayoutPanel19.Controls.Add(this.label76, 0, 0);
             this.tableLayoutPanel19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel19.Location = new System.Drawing.Point(814, 67);
@@ -1426,16 +1426,16 @@
             this.tableLayoutPanel19.Size = new System.Drawing.Size(342, 14);
             this.tableLayoutPanel19.TabIndex = 9;
             // 
-            // comboBox10
+            // DrySeries
             // 
-            this.comboBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Items.AddRange(new object[] {
+            this.DrySeries.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DrySeries.FormattingEnabled = true;
+            this.DrySeries.Items.AddRange(new object[] {
             "新增項目"});
-            this.comboBox10.Location = new System.Drawing.Point(174, 3);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(165, 20);
-            this.comboBox10.TabIndex = 4;
+            this.DrySeries.Location = new System.Drawing.Point(174, 3);
+            this.DrySeries.Name = "DrySeries";
+            this.DrySeries.Size = new System.Drawing.Size(165, 20);
+            this.DrySeries.TabIndex = 4;
             // 
             // label76
             // 
@@ -1577,7 +1577,7 @@
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel7.Controls.Add(this.label6, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.dateTimePicker1, 1, 0);
-            this.tableLayoutPanel7.Controls.Add(this.comboBox4, 3, 0);
+            this.tableLayoutPanel7.Controls.Add(this.PumpType, 3, 0);
             this.tableLayoutPanel7.Controls.Add(this.label7, 2, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel7.Location = new System.Drawing.Point(4, 67);
@@ -1608,17 +1608,17 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(194, 22);
             this.dateTimePicker1.TabIndex = 1;
             // 
-            // comboBox4
+            // PumpType
             // 
-            this.comboBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.PumpType.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PumpType.FormattingEnabled = true;
+            this.PumpType.Items.AddRange(new object[] {
             "新增項目"});
-            this.comboBox4.Location = new System.Drawing.Point(603, 3);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(197, 20);
-            this.comboBox4.TabIndex = 2;
-            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox12_SelectedIndexChanged);
+            this.PumpType.Location = new System.Drawing.Point(603, 3);
+            this.PumpType.Name = "PumpType";
+            this.PumpType.Size = new System.Drawing.Size(197, 20);
+            this.PumpType.TabIndex = 2;
+            this.PumpType.SelectedIndexChanged += new System.EventHandler(this.comboBox12_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -1639,7 +1639,7 @@
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel8.Controls.Add(this.comboBox6, 3, 0);
+            this.tableLayoutPanel8.Controls.Add(this.PumpSeries, 3, 0);
             this.tableLayoutPanel8.Controls.Add(this.label9, 2, 0);
             this.tableLayoutPanel8.Controls.Add(this.label8, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.Salesman, 1, 0);
@@ -1653,17 +1653,17 @@
             this.tableLayoutPanel8.TabIndex = 4;
             this.tableLayoutPanel8.CellPaint += new System.Windows.Forms.TableLayoutCellPaintEventHandler(this.tableLayoutPanel8_CellPaint);
             // 
-            // comboBox6
+            // PumpSeries
             // 
-            this.comboBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
+            this.PumpSeries.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PumpSeries.FormattingEnabled = true;
+            this.PumpSeries.Items.AddRange(new object[] {
             "新增項目"});
-            this.comboBox6.Location = new System.Drawing.Point(603, 3);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(197, 20);
-            this.comboBox6.TabIndex = 3;
-            this.comboBox6.SelectedIndexChanged += new System.EventHandler(this.comboBox12_SelectedIndexChanged);
+            this.PumpSeries.Location = new System.Drawing.Point(603, 3);
+            this.PumpSeries.Name = "PumpSeries";
+            this.PumpSeries.Size = new System.Drawing.Size(197, 20);
+            this.PumpSeries.TabIndex = 3;
+            this.PumpSeries.SelectedIndexChanged += new System.EventHandler(this.comboBox12_SelectedIndexChanged);
             // 
             // label9
             // 
@@ -1710,8 +1710,8 @@
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel9.Controls.Add(this.label11, 2, 0);
             this.tableLayoutPanel9.Controls.Add(this.label10, 0, 0);
-            this.tableLayoutPanel9.Controls.Add(this.comboBox7, 1, 0);
-            this.tableLayoutPanel9.Controls.Add(this.comboBox13, 3, 0);
+            this.tableLayoutPanel9.Controls.Add(this.DisEngineer, 1, 0);
+            this.tableLayoutPanel9.Controls.Add(this.MeasureEngineer, 3, 0);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel9.Location = new System.Drawing.Point(1, 106);
             this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(0);
@@ -1746,29 +1746,29 @@
             this.label10.Text = "拆解工程師:";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // comboBox7
+            // DisEngineer
             // 
-            this.comboBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
+            this.DisEngineer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DisEngineer.FormattingEnabled = true;
+            this.DisEngineer.Items.AddRange(new object[] {
             "新增項目"});
-            this.comboBox7.Location = new System.Drawing.Point(205, 3);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(196, 20);
-            this.comboBox7.TabIndex = 1;
-            this.comboBox7.SelectedIndexChanged += new System.EventHandler(this.comboBox12_SelectedIndexChanged);
+            this.DisEngineer.Location = new System.Drawing.Point(205, 3);
+            this.DisEngineer.Name = "DisEngineer";
+            this.DisEngineer.Size = new System.Drawing.Size(196, 20);
+            this.DisEngineer.TabIndex = 1;
+            this.DisEngineer.SelectedIndexChanged += new System.EventHandler(this.comboBox12_SelectedIndexChanged);
             // 
-            // comboBox13
+            // MeasureEngineer
             // 
-            this.comboBox13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Items.AddRange(new object[] {
+            this.MeasureEngineer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MeasureEngineer.FormattingEnabled = true;
+            this.MeasureEngineer.Items.AddRange(new object[] {
             "新增項目"});
-            this.comboBox13.Location = new System.Drawing.Point(609, 3);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(197, 20);
-            this.comboBox13.TabIndex = 3;
-            this.comboBox13.SelectedIndexChanged += new System.EventHandler(this.comboBox12_SelectedIndexChanged);
+            this.MeasureEngineer.Location = new System.Drawing.Point(609, 3);
+            this.MeasureEngineer.Name = "MeasureEngineer";
+            this.MeasureEngineer.Size = new System.Drawing.Size(197, 20);
+            this.MeasureEngineer.TabIndex = 3;
+            this.MeasureEngineer.SelectedIndexChanged += new System.EventHandler(this.comboBox12_SelectedIndexChanged);
             // 
             // tableLayoutPanel16
             // 
@@ -1828,7 +1828,7 @@
             this.tableLayoutPanel17.ColumnCount = 2;
             this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel17.Controls.Add(this.comboBox8, 1, 0);
+            this.tableLayoutPanel17.Controls.Add(this.RunSpeed, 1, 0);
             this.tableLayoutPanel17.Controls.Add(this.label74, 0, 0);
             this.tableLayoutPanel17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel17.Location = new System.Drawing.Point(811, 22);
@@ -1840,17 +1840,17 @@
             this.tableLayoutPanel17.Size = new System.Drawing.Size(348, 20);
             this.tableLayoutPanel17.TabIndex = 7;
             // 
-            // comboBox8
+            // RunSpeed
             // 
-            this.comboBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Items.AddRange(new object[] {
+            this.RunSpeed.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.RunSpeed.FormattingEnabled = true;
+            this.RunSpeed.Items.AddRange(new object[] {
             "新增項目"});
-            this.comboBox8.Location = new System.Drawing.Point(177, 3);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(168, 20);
-            this.comboBox8.TabIndex = 3;
-            this.comboBox8.SelectedIndexChanged += new System.EventHandler(this.comboBox12_SelectedIndexChanged);
+            this.RunSpeed.Location = new System.Drawing.Point(177, 3);
+            this.RunSpeed.Name = "RunSpeed";
+            this.RunSpeed.Size = new System.Drawing.Size(168, 20);
+            this.RunSpeed.TabIndex = 3;
+            this.RunSpeed.SelectedIndexChanged += new System.EventHandler(this.comboBox12_SelectedIndexChanged);
             // 
             // label74
             // 
@@ -1868,7 +1868,7 @@
             this.tableLayoutPanel18.ColumnCount = 2;
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel18.Controls.Add(this.comboBox9, 1, 0);
+            this.tableLayoutPanel18.Controls.Add(this.Equipment, 1, 0);
             this.tableLayoutPanel18.Controls.Add(this.label75, 0, 0);
             this.tableLayoutPanel18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel18.Location = new System.Drawing.Point(814, 46);
@@ -1878,17 +1878,17 @@
             this.tableLayoutPanel18.Size = new System.Drawing.Size(342, 14);
             this.tableLayoutPanel18.TabIndex = 8;
             // 
-            // comboBox9
+            // Equipment
             // 
-            this.comboBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Items.AddRange(new object[] {
+            this.Equipment.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Equipment.FormattingEnabled = true;
+            this.Equipment.Items.AddRange(new object[] {
             "新增項目"});
-            this.comboBox9.Location = new System.Drawing.Point(174, 3);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(165, 20);
-            this.comboBox9.TabIndex = 4;
-            this.comboBox9.SelectedIndexChanged += new System.EventHandler(this.comboBox12_SelectedIndexChanged);
+            this.Equipment.Location = new System.Drawing.Point(174, 3);
+            this.Equipment.Name = "Equipment";
+            this.Equipment.Size = new System.Drawing.Size(165, 20);
+            this.Equipment.TabIndex = 4;
+            this.Equipment.SelectedIndexChanged += new System.EventHandler(this.comboBox12_SelectedIndexChanged);
             // 
             // label75
             // 
@@ -1907,7 +1907,7 @@
             this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel20.Controls.Add(this.label77, 0, 0);
-            this.tableLayoutPanel20.Controls.Add(this.comboBox11, 1, 0);
+            this.tableLayoutPanel20.Controls.Add(this.RootsSeries, 1, 0);
             this.tableLayoutPanel20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel20.Location = new System.Drawing.Point(811, 85);
             this.tableLayoutPanel20.Margin = new System.Windows.Forms.Padding(0);
@@ -1928,17 +1928,17 @@
             this.label77.Text = "Roots序號:";
             this.label77.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox11
+            // RootsSeries
             // 
-            this.comboBox11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Items.AddRange(new object[] {
+            this.RootsSeries.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.RootsSeries.FormattingEnabled = true;
+            this.RootsSeries.Items.AddRange(new object[] {
             "新增項目"});
-            this.comboBox11.Location = new System.Drawing.Point(177, 3);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(168, 20);
-            this.comboBox11.TabIndex = 1;
-            this.comboBox11.SelectedIndexChanged += new System.EventHandler(this.comboBox12_SelectedIndexChanged);
+            this.RootsSeries.Location = new System.Drawing.Point(177, 3);
+            this.RootsSeries.Name = "RootsSeries";
+            this.RootsSeries.Size = new System.Drawing.Size(168, 20);
+            this.RootsSeries.TabIndex = 1;
+            this.RootsSeries.SelectedIndexChanged += new System.EventHandler(this.comboBox12_SelectedIndexChanged);
             // 
             // tableLayoutPanel21
             // 
@@ -1946,7 +1946,7 @@
             this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel21.Controls.Add(this.label78, 0, 0);
-            this.tableLayoutPanel21.Controls.Add(this.comboBox12, 1, 0);
+            this.tableLayoutPanel21.Controls.Add(this.PumpVoltage, 1, 0);
             this.tableLayoutPanel21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel21.Location = new System.Drawing.Point(811, 106);
             this.tableLayoutPanel21.Margin = new System.Windows.Forms.Padding(0);
@@ -1967,17 +1967,17 @@
             this.label78.Text = "PUMP電壓";
             this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox12
+            // PumpVoltage
             // 
-            this.comboBox12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Items.AddRange(new object[] {
+            this.PumpVoltage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PumpVoltage.FormattingEnabled = true;
+            this.PumpVoltage.Items.AddRange(new object[] {
             "新增項目"});
-            this.comboBox12.Location = new System.Drawing.Point(177, 3);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(168, 20);
-            this.comboBox12.TabIndex = 1;
-            this.comboBox12.SelectedIndexChanged += new System.EventHandler(this.comboBox12_SelectedIndexChanged);
+            this.PumpVoltage.Location = new System.Drawing.Point(177, 3);
+            this.PumpVoltage.Name = "PumpVoltage";
+            this.PumpVoltage.Size = new System.Drawing.Size(168, 20);
+            this.PumpVoltage.TabIndex = 1;
+            this.PumpVoltage.SelectedIndexChanged += new System.EventHandler(this.comboBox12_SelectedIndexChanged);
             // 
             // tableLayoutPanel10
             // 
@@ -2445,7 +2445,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(129, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(415, 22);
+            this.textBox1.Size = new System.Drawing.Size(643, 22);
             this.textBox1.TabIndex = 4;
             // 
             // InspectPage1
@@ -2522,16 +2522,16 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox PumpType;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox PumpSeries;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox Salesman;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.ComboBox DisEngineer;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
         private System.Windows.Forms.Label label12;
@@ -2665,20 +2665,20 @@
         private System.Windows.Forms.CheckBox checkBox45;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel17;
         private System.Windows.Forms.Label label74;
-        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.ComboBox RunSpeed;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel18;
         private System.Windows.Forms.Label label75;
-        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.ComboBox Equipment;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel19;
-        private System.Windows.Forms.ComboBox comboBox10;
+        private System.Windows.Forms.ComboBox DrySeries;
         private System.Windows.Forms.Label label76;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel20;
         private System.Windows.Forms.Label label77;
-        private System.Windows.Forms.ComboBox comboBox11;
+        private System.Windows.Forms.ComboBox RootsSeries;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel21;
         private System.Windows.Forms.Label label78;
-        private System.Windows.Forms.ComboBox comboBox12;
-        private System.Windows.Forms.ComboBox comboBox13;
+        private System.Windows.Forms.ComboBox PumpVoltage;
+        private System.Windows.Forms.ComboBox MeasureEngineer;
 
     }
 }

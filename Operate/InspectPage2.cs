@@ -6,15 +6,61 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using IniTool;
 
 namespace AutoMode
 {
     public partial class InspectPage2 : Common.Wizard.CCInteriorWizardPage
     {
+        private const string strINIPath = "INI\\InspectPage2.INI";
+        private List<ComboBox> m_cbList = new List<ComboBox>();
+
         public InspectPage2()
         {
             InitializeComponent();
+
+            InitializeComboxList();
+
+            // 修正 TableLayout 閃爍問題
             MakeTablelayoutSmooth();
+        }
+
+        private void InitializeComboxList()
+        {
+            m_cbList.Add(PartName1);
+            m_cbList.Add(PartName2);
+            m_cbList.Add(PartName3);
+            m_cbList.Add(PartName4);
+            m_cbList.Add(PartName5);
+            m_cbList.Add(PartName6);
+            m_cbList.Add(PartName7);
+            m_cbList.Add(PartName8);
+            m_cbList.Add(PartName9);            
+        }
+
+        private void SaveIniFile(ComboBox cb)
+        {
+            IniFile iniFile = new IniFile(strINIPath);
+
+            for (int iIdx = 1; iIdx < cb.Items.Count; ++iIdx)
+            {
+                iniFile.WriteValue(cb.Name, iIdx.ToString(), cb.Items[iIdx].ToString());
+            }
+        }
+
+        private void LoadIniFile()
+        {
+            IniFile iniFile = new IniFile(strINIPath);
+
+            foreach (ComboBox cb in m_cbList)
+            {
+                List<KeyValuePair<string, string>> KeyValuePair = iniFile.GetSectionValuesAsList(cb.Name);
+
+                foreach (KeyValuePair<string, string> val in KeyValuePair)
+                {
+                    cb.Items.Add(val.Value);
+                }
+            }
         }
 
         private void MakeTablelayoutSmooth()
